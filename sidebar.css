@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+#nav {
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1030;
+  background-color: blue;
+  height: 50px;
+  max-height: 50px;
+}
+
+#sidebar {
+  padding-top: 50px;
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  background-color: #000;
+  left: 0;
+  z-index: 999;
+  overflow: auto;
+
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+}
+
+@media(max-width: 767px) {
+  #sidebar {
+    left: -300px;
+  }
+}
+
+#sidebar.show-nav {
+  left: 0;
+}
