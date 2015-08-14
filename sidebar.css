@@ -12,6 +12,11 @@ body {
   max-height: 50px;
 }
 
+#nav h2 {
+  margin: 0 1em;
+  line-height: 50px;
+}
+
 #sidebar {
   padding-top: 50px;
   position: fixed;
